@@ -11,7 +11,7 @@ CryptoLabX is a modular cryptography and cryptanalysis toolkit developed as part
 | Name | Roll Number |
 |------|-------------|
 | Atul Kumar Meghwal | 2024UCP1756 |
-
+| charan             | 2024UCP1525 |
 
 ---
 
