@@ -1,0 +1,8 @@
+*.zip
+*.log
+__pycache__/
+*.pyc
+venv/
+.env
+secure_application/outputs/*.db
+secure_application/outputs/*.html

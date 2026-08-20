@@ -1,0 +1,30 @@
+Vulnerability: Cross-Site Scripting (XSS)
+
+Application: Library Management System
+
+Affected Function:
+Member Registration / HTML Report
+
+Test Payload:
+<script>alert('XSS')</script>
+
+Expected Behavior:
+The application should treat the input as plain text and escape
+HTML special characters.
+
+Observed Behavior:
+The payload was stored directly in the generated HTML file.
+
+Evidence:
+members.html contains:
+<script>alert('XSS')</script>
+
+Root Cause:
+User-controlled member information is inserted into HTML without
+HTML escaping.
+
+Impact:
+An attacker could inject JavaScript into the generated webpage.
+
+Severity:
+Medium
