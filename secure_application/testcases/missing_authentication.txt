@@ -1,0 +1,24 @@
+Vulnerability: Missing Authentication
+
+Application: Library Management System
+
+Affected Functions:
+Book Issue and Book Return
+
+Test:
+Start the application and directly select the Issue Book option
+without logging in.
+
+Expected Secure Behavior:
+The application should require authentication before allowing
+members to issue or return books.
+
+Observed Vulnerable Behavior:
+The application allows the operation without authentication.
+
+Root Cause:
+No authentication mechanism is implemented before sensitive
+operations.
+
+Severity:
+High
